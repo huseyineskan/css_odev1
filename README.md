@@ -1,2 +1,6 @@
-# css_odev1
-css ödev 1
+# MY MUSIC HTML TEMPLATE
+
+This template includes 3 pages. 
+* Home page
+* Shop page
+* Contact page
