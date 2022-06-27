@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 0 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 60px;
+    background-color: #1A4D2E;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header a.logo{
+    color: #FF9F29;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+}
+
+header a,
+header a.logo span{
+    color: #fff;
+}
+
+header nav ul{
+    gap: 0 20px;
+}
+
+.socials ul li img{
+    width: 25px;
+}
+
+section{
+    margin-top: 100px;
+}
+
+section .col-2{
+    display: flex;
+    gap: 0 20px;
+    margin-top: 50px;
+}
+
+.col-2 div{
+    width: 50%;
+}
+
+.col-2 div img{
+    width: 100%;
+}
+
+section h1{
+    font-size: 30px;
+}
+
+section .title-desc{
+    font-size: 20px;
+    border-bottom: 1px solid #1A4D2E;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+section p{
+    margin-bottom: 15px;
+}
+
+.sign{
+    font-family: 'The Nautigal', cursive;
+    margin-top: 20px;
+    display: block;
+    font-size: 30px;
+    text-align: end;
+}
+
+/* SHOP */
+
+section.shop,
+section.contact{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.col-4{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.item{
+    width: 23%;
+    border: 1px solid #e6e6e6;
+    padding: 10px 10px 20px;
+    transition: box-shadow 200ms;
+    text-align: center;
+}
+
+.item:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+}
+
+.item-img,
+.item-img img{
+    width: 100%;
+}
+
+.item-title{
+    color: #1A4D2E;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item-price{
+    border: 1px solid #1A4D2E;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #FF9F29;
+    transition: background-color 200ms;
+}
+
+.item:hover .item-price{
+    background-color: #1A4D2E;
+}
+
+/* CONTACT */
+p.contact-number{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.contact-number a{
+    color: #1A4D2E;
+}
+
+@media screen and (max-width: 992px){
+    .item{
+        width: 48%;
+    }
+
+    .col-2{
+        flex-wrap: wrap;
+    }
+
+    .col-2 div{
+        width: 100%;
+    }
+}
